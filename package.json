@@ -1,0 +1,24 @@
+{
+  "name": "questbar",
+  "version": "1.0.0",
+  "description": "QuestBar: A macOS todo list",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron --disable-gpu . ",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.marcusmichaels.questbar",
+    "productName": "QuestBar"
+  },
+  "author": "Marcus Michaels",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "canvas": "^3.1.0"
+  },
+  "devDependencies": {
+    "electron": "^35.1.4",
+    "electron-builder": "^26.0.12"
+  }
+}

@@ -1,4 +1,4 @@
-# 🧙‍♂️ QuestBar  
+# 🧙‍♂️ QuestBar
 A lightweight, native-feeling Electron menubar app to track your **quests**, powered by modern JavaScript, fantasy vibes, and pixel-perfect polish.
 
 ![QuestBar Screenshot](./images/questbar-screenshot.png)
@@ -56,27 +56,19 @@ npm start
 
 ## 📦 Packaging the App
 
-To package it for distribution:
+To package it for non-App Store distribution:
 
-```bash
-npm install --save-dev electron-builder
-```
-
-Then add to `package.json`:
-
-```json
-"scripts": {
-  "build": "electron-builder"
-}
-```
-
-Run:
+Update your env vars cert to Developer ID Distribution and run:
 
 ```bash
 npm run build
 ```
 
-> ⚠️ Add a `build` config section to `package.json` for platform icons, name, etc.
+To package it for the App Store, update env vars certs to Apple Distribution and Mac Installer then run:
+
+```bash
+npm run build:mas
+```
 
 ---
 
